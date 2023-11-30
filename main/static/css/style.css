@@ -1,0 +1,173 @@
+*{
+	margin: 0;
+}
+
+@font-face {
+	font-family: 'InterTight'; 
+	src: url('../fonts/InterTight-VariableFont_wght.ttf'); 
+}
+ 
+@font-face {
+	font-family: 'Sofia'; 
+	src: url('../fonts/SofiaSansSemiCondensed-VariableFont_wght.ttf'); 
+}
+
+@font-face {
+	font-family: 'Tektur'; 
+	src: url('../fonts/TekturNarrow-ExtraBold.ttf'); 
+}
+
+body{
+	background: #9c50ff;
+	color: #fff;
+}
+
+.prototype{
+    float: right;
+    margin-right: 6vw;
+    background-color: rgba(156, 80, 255, 0.8);
+    border: solid #fff 9.26px;
+    border-radius: 30px;
+    width: 60vh;
+    height: 60vh;
+    margin-top: -4vw;
+}
+
+.prototype h1{
+    margin-top: 3.5vw;
+}
+
+.logotype{
+    float: left;
+    margin-left: 4vw;
+}
+
+.logo_text{
+	font-family: 'Tektur'; 
+    vertical-align:middle;
+    text-align: center;
+    font-size:  calc(30px + 7.4vw);
+}
+
+.colortext {
+    color: rgb(0, 0, 0);
+}
+
+.logo_podtext{
+	font-family: 'InterTight';
+    vertical-align:middle;
+    text-align: center;
+    font-size: calc(30px + 1.82vw);
+}
+
+.logo{
+    width: calc(60px + 2vw);;
+    vertical-align:middle;
+    margin: 2.5vw 2vw 4vw 3vw;
+}
+
+h2{
+	font-family: 'Sofia'; 
+	padding-right: 3vw;
+	font-size: calc(20px + 5vw);
+    padding-top: calc(20px + 6vh);;
+	text-align: right;
+}
+
+.about_text{
+    font-family: 'Sofia'; 
+	padding-right: 3vw;
+	font-size: calc(30px + 2vh);
+    padding-top: calc(30px + 2vh);;
+	text-align: right;
+}
+
+.square, .square2{
+    position: absolute;
+    bottom: 0;
+    width: calc(120px + 80vw);
+    min-width: 350px;
+    z-index: -10;
+}
+
+.square{
+   left: 0;
+}
+
+.square2{
+    right: 0;
+}
+
+.soc{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 2vw;
+}
+
+.youtube{
+    width: 4vw;
+    min-width: 60px;
+    margin-right: 10px;
+}
+
+.vk{
+    width: 4vw;
+    min-width: 60px;
+    margin-right: 5px;
+}
+
+.tg{
+    width: 4vw;
+    min-width: 60px;
+    margin-right: 10px;
+}
+
+.download {
+    background-color: #6E26F9;
+    font-family: 'InterTight';
+    font-size: calc(10px + 2vw);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: solid #fff 8px;
+    border-radius: 30px;
+    text-align: center;    
+    transition: 0.3s;
+    display: table; margin: 6vh auto;
+  }
+
+  .download:hover {
+    background-color: #fff;
+    color: #6E26F9;
+    transition: 0.3s;
+  }
+
+.header{
+    overflow: hidden;
+}
+
+.header_right{
+    float: right;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.header_right a{
+	font-family: 'InterTight'; 
+	font-size: calc(30px + 1vw);
+    margin: 2vw 40px;
+    text-decoration: none;
+    padding: 3px 30px 8px;
+    color: #fff;
+    transition: 0.2s;
+    border: solid #fff 8px;
+    border-radius: 30px;
+}
+
+.header_right a:hover{
+    color: #9C50FF;
+    background-color: white;
+    transition: 0.2s;    
+}

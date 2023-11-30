@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>  
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="icon" href="{% static 'img/логотип.svg' %}" type="image/svg">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Epic hero - главная</title>
+</head>
+<body>
+<div class="header">
+	<img src="{% static 'img/логотип.svg' %}" alt="Логотип" class="logo">
+	<div class="header_right">
+		<a href="about/">support</a>
+		<a href="help/">about</a>
+	</div>
+</div>
+
+<div class="logotype">
+	<h1 class="logo_text">EPIC HERO</h1>
+	<h1 class="logo_podtext">indie development studio</h1>
+</div>
+
+<div class="prototype">
+	<h1 class="logo_podtext">Try out our <span class="colortext">Aiven`s story</span>
+		prototype 0.0.8</h1>
+		
+	<a href="/download/" class="download">download</a>
+</div>
+
+<img src="{% static 'img/boxes1.svg' %}" alt="Квадратики" class="square">
+<img src="{% static 'img/boxes2.svg' %}" alt="Квадратики 2" class="square2">
+
+<div class="soc">
+	<a href="https://youtube.com/@epic_hero"><img src="{% static 'img/youtube.svg' %}" alt="youtube" class="youtube"></a>
+	<a href="https://vk.com/public219629759"><img src="{% static 'img/vk.svg' %}" alt="vk" class="vk"></a>
+	<a href="https://t.me/epichero_dev"><img src="{% static 'img/telegram.svg' %}" alt="telegram" class="tg"></a>
+</div>
+</body>
+</html>
