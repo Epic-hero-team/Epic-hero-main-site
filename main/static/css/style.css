@@ -30,7 +30,7 @@ body{
     border-radius: 30px;
     width: 60vh;
     height: 60vh;
-    margin-top: -4vw;
+    margin-top: 4vw;
 }
 
 .prototype h1{
@@ -39,14 +39,8 @@ body{
 
 .logotype{
     float: left;
-    margin-left: 4vw;
-}
-
-.logo_text{
-	font-family: 'Tektur'; 
-    vertical-align:middle;
-    text-align: center;
-    font-size:  calc(30px + 7.4vw);
+    margin-left: 2vw;
+    margin-top: -3vw;
 }
 
 .colortext {
@@ -55,31 +49,26 @@ body{
 
 .logo_podtext{
 	font-family: 'InterTight';
-    vertical-align:middle;
     text-align: center;
     font-size: calc(30px + 1.82vw);
 }
 
-.logo{
-    width: calc(60px + 2vw);;
+.logo_text{
+	font-family: 'Tektur'; 
+	font-size: calc(30px + 6vw);
+    display: inline-block;
     vertical-align:middle;
-    margin: 2.5vw 2vw 4vw 3vw;
+    margin-top: 1vw;
 }
 
-h2{
-	font-family: 'Sofia'; 
-	padding-right: 3vw;
-	font-size: calc(20px + 5vw);
-    padding-top: calc(20px + 6vh);;
-	text-align: right;
+.header{
+    overflow: hidden;
 }
 
-.about_text{
-    font-family: 'Sofia'; 
-	padding-right: 3vw;
-	font-size: calc(30px + 2vh);
-    padding-top: calc(30px + 2vh);;
-	text-align: right;
+.logo{
+    width: calc(30px + 2vw);;
+    vertical-align:middle;
+    margin: 1vw 2vw 0vw 2vw;
 }
 
 .square, .square2{
@@ -157,7 +146,7 @@ h2{
 .header_right a{
 	font-family: 'InterTight'; 
 	font-size: calc(30px + 1vw);
-    margin: 2vw 40px;
+    margin: 4vw 40px;
     text-decoration: none;
     padding: 3px 30px 8px;
     color: #fff;

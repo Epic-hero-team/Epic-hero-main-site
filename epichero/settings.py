@@ -108,23 +108,7 @@ LANGUAGE_CODE = 'ru-ru'
 
 TIME_ZONE = 'UTC'
 
-# язык сайта по умолчанию, если не удалось определить язык другими способами
-LANGUAGE_CODE = 'ru'
-
-# список доступных языков
-LANGUAGES = (
-    ('ru', 'Russian'),
-    ('en', 'English'),
-)
-
-# включаем систему перевода django
 USE_I18N = True
-
-# указываем, где лежат файлы перевода
-LOCALE_PATHS = (
-    'locale',
-    # os.path.join(PROJECT_DIR, 'locale'),
-)
 
 USE_TZ = True
 
