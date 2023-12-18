@@ -1,11 +1,12 @@
 from django.urls import path, re_path
 from django.views.generic.base import TemplateView
-from main.views import main, about, help, download
+from main.views import main, support, download, news, games
 
 urlpatterns = [
     path('', main),
-    path('about/', about),
-    path('help/', help),
+    path('news/', news),
+    path('games/', games),
+    path('support/', support),
     path('download/', download),
     path(
         "robots.txt",

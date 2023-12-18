@@ -4,12 +4,12 @@
 
 @font-face {
 	font-family: 'InterTight'; 
-	src: url('../fonts/InterTight-VariableFont_wght.ttf'); 
+	src: url('../fonts/Inter-Light.ttf'); 
 }
  
 @font-face {
 	font-family: 'Sofia'; 
-	src: url('../fonts/SofiaSansSemiCondensed-VariableFont_wght.ttf'); 
+	src: url('../fonts/OpenSans-Light.ttf'); 
 }
 
 @font-face {
@@ -18,19 +18,18 @@
 }
 
 body{
-	background: #9c50ff;
+	background: #202337;
 	color: #fff;
 }
 
 .prototype{
     float: right;
-    margin-right: 6vw;
-    background-color: rgba(156, 80, 255, 0.8);
-    border: solid #fff 9.26px;
-    border-radius: 30px;
-    width: 60vh;
+    margin-right: 2vw;
+    border: solid #fff 4px;
+    width: 30vw;
     height: 60vh;
-    margin-top: 4vw;
+    margin-top: 6vw;
+    padding: 2vw;
 }
 
 .prototype h1{
@@ -43,84 +42,86 @@ body{
     margin-top: -3vw;
 }
 
-.colortext {
-    color: rgb(0, 0, 0);
+.underline-one {
+	color: #96abb3; /* Цвет обычной ссылки */
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+.underline-one:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 4px; /* Высота линии */
+    background-color: rgb(115, 199, 255); /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.underline-one:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 4px; /* Высота линии */
+    background-color: rgb(115, 199, 255); /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
 }
 
 .logo_podtext{
-	font-family: 'InterTight';
+	font-family: 'Sofia';
     text-align: center;
+    padding: 2px;
     font-size: calc(30px + 1.82vw);
-}
-
-.logo_text{
-	font-family: 'Tektur'; 
-	font-size: calc(30px + 6vw);
-    display: inline-block;
-    vertical-align:middle;
-    margin-top: 1vw;
 }
 
 .header{
     overflow: hidden;
+    background: #171717;
 }
 
 .logo{
-    width: calc(30px + 2vw);;
+    width: calc(2px + 1vw);;
     vertical-align:middle;
-    margin: 1vw 2vw 0vw 2vw;
-}
-
-.square, .square2{
-    position: absolute;
-    bottom: 0;
-    width: calc(120px + 80vw);
-    min-width: 350px;
-    z-index: -10;
-}
-
-.square{
-   left: 0;
-}
-
-.square2{
-    right: 0;
-}
+    margin: 0.6vw 1vw 0vw 1.2vw;
+}   
 
 .soc{
     position: absolute;
     bottom: 0;
-    left: 0;
-    margin-left: 2vw;
+    right: 0;
+    margin-right: 50%;
 }
 
 .youtube{
-    width: 4vw;
-    min-width: 60px;
+    width: 1vw;
+    min-width: 40px;
     margin-right: 10px;
 }
 
 .vk{
-    width: 4vw;
-    min-width: 60px;
+    width: 1vw;
+    min-width: 40px;
     margin-right: 5px;
 }
 
 .tg{
-    width: 4vw;
-    min-width: 60px;
+    width: 1vw;
+    min-width: 40px;
     margin-right: 10px;
 }
 
 .download {
-    background-color: #6E26F9;
-    font-family: 'InterTight';
-    font-size: calc(10px + 2vw);
+    font-family: 'Sofia';
+    font-size: calc(4px + 2vw);
     color: white;
     text-decoration: none;
     padding: 10px 20px;
-    border: solid #fff 8px;
-    border-radius: 30px;
+    border: solid #fff 4px;
     text-align: center;    
     transition: 0.3s;
     display: table; margin: 6vh auto;
@@ -128,7 +129,7 @@ body{
 
   .download:hover {
     background-color: #fff;
-    color: #6E26F9;
+    color: #171717;
     transition: 0.3s;
   }
 
@@ -136,27 +137,55 @@ body{
     overflow: hidden;
 }
 
+.logo_text{
+	font-family: 'Tektur'; 
+	font-size: calc(2px + 2vw);
+    display: inline-block;
+    vertical-align:middle;
+    margin-top: 0.6vw;
+}
+
 .header_right{
     float: right;
     display: flex;
     align-items: center;
     text-align: center;
+    margin-right: 1vw;
 }
 
 .header_right a{
 	font-family: 'InterTight'; 
-	font-size: calc(30px + 1vw);
-    margin: 4vw 40px;
+	font-size: calc(2px + 1vw);
+    margin: 1vw 7px;
     text-decoration: none;
-    padding: 3px 30px 8px;
-    color: #fff;
+    padding: 3px 25px 8px;
+    color: #aaaaae;
     transition: 0.2s;
-    border: solid #fff 8px;
-    border-radius: 30px;
 }
 
 .header_right a:hover{
-    color: #9C50FF;
-    background-color: white;
+    color: #ffffff;
+    border-radius: 6px;
+    background: #303030; /*#2c2c2c*/
     transition: 0.2s;    
+}
+
+.about{
+    font-family: "Sofia";
+    font-size: calc(1px + 2vw);
+    position: relative;
+    width: 50vw;
+    float: left;
+    margin: 6vw 2vw;
+}
+
+.about a{
+    color: rgb(115, 199, 255);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.about a:hover{
+    color: rgb(225, 243, 255);
+    transition: 0.2s;
 }
