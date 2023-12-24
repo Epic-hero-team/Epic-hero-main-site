@@ -25,7 +25,7 @@ body{
 .prototype{
     float: right;
     margin-right: 2vw;
-    border: solid #fff 4px;
+   outline: solid #fff 4px;
     width: 30vw;
     height: 60vh;
     margin-top: 6vw;
@@ -91,28 +91,37 @@ body{
 }   
 
 .soc{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin-right: 50%;
+    position: relative;
+    margin: 30px 2vw;
+    display: inline-block;
+    width: 90vw;
 }
 
 .youtube{
     width: 1vw;
     min-width: 40px;
-    margin-right: 10px;
+    margin: 1vh auto;
+    transition: 0.5s;
 }
 
 .vk{
     width: 1vw;
     min-width: 40px;
-    margin-right: 5px;
+    margin: 1vh auto;
+    transition: 0.5s;
 }
 
 .tg{
     width: 1vw;
     min-width: 40px;
-    margin-right: 10px;
+    margin: 1vh auto;
+    transition: 0.5s;
+}
+
+.youtube:hover, .tg:hover, .vk:hover{
+    filter: drop-shadow(0 0 1rem rgb(115, 199, 255));
+    width: 2vw;
+    transition: 0.5s;
 }
 
 .download {
@@ -295,4 +304,110 @@ body{
     margin-top: 4vh;
     text-align: center;
     color: #fff;
+}
+
+@media (max-width:600px) {
+.about{
+    font-family: "Sofia";
+    font-size: calc(10px + 2vw);
+    width: 90vw;
+    float: none;
+    margin: 4vw 3vw;
+    position: static;
+    display: block;
+}
+
+.prototype{
+    float: none;
+    margin: 1vh auto;
+    outline: solid #fff 2px;
+    width: 90vw;
+    height: auto;
+    margin-top: 6vh;
+    padding: 2vw;
+    position: relative;
+    display: block;
+}
+
+.download {
+    font-family: 'Sofia';
+    font-size: calc(8px + 2vw);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: solid #fff 4px;
+    text-align: center;    
+    transition: 0.3s;
+    display: table; margin: 6vh auto;
+  }
+
+.header_right a{
+	font-family: 'InterTight'; 
+	font-size: calc(9px + 1vw);
+    margin: 1vw 1px;
+    text-decoration: none;
+    padding: 8px 5px;
+    color: #aaaaae;
+    transition: 0.2s;
+}
+
+.logo_text{
+	font-family: 'Tektur'; 
+	font-size: calc(12px + 2vw);
+    display: inline-block;
+    vertical-align:middle;
+    margin-top: 8px;
+}
+
+.logo{
+    width: calc(10px + 1vw);;
+    vertical-align:middle;
+    margin: 8px 2px 0 4px;
+}
+.news{
+    font-family: "Sofia";
+    #background: #18181A;
+    margin: 30px auto;
+    display:block;
+    width: 95vw;
+    height: auto;
+    border-bottom: 2px solid #fff;
+}
+.news img{
+    width: 100%;
+    height: auto;
+    float: left;
+    #border-radius: 30px 0 0 0;
+    margin-right: 2vw;
+}
+
+.news h1{
+    font-size: calc(14px + 4vw);
+    padding: 5px 2px;
+    margin-left: 4px;
+}
+
+.news p{
+    font-size: calc(12px + 1vw);
+    padding: 4px 4px;
+    margin-top: 1vh;
+    color: #fff;
+}
+.more{  
+    margin: -2vh 0 2vh 0;
+}
+.more a{
+    font-size: calc(14px + 1vw);  
+    color: rgb(115, 199, 255);
+    padding: 4px; 
+}
+.content p{
+    font-size: calc(12px + 1vw);
+}
+.content{
+    width: 97vw;
+}
+#disqus_thread{
+    width: 97vw;
+}
 }
