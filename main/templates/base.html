@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>  
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+  	<meta name="description" content="Официльный сайт Epic hero. Здесь вы можете скачать прототип игры Aiven's story.">
+  	<meta name="Keywords" content="epichero, EPICHERO, Epic hero, Epic Hero, Epic her, Aiven's story, Aiven, Aiven's, Aivens story, story, Прототип, прототип, epic hero, какой-то рыцарь, белый шлем, epic, игра, game"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<div class="header">
+	<a href="{% url 'home' %}" class="home"><img src="{% static 'img/логотип.svg' %}" alt="Логотип" class="logo">
+	<h1 class="logo_text">EPIC HERO</h1></a>
+	<div class="header_right">
+		<a href="{% url 'games' %}">Игры</a>
+		<a href="{% url 'news' %}">Новости</a>
+		<a href="https://www.tinkoff.ru/rm/shrayner.ilya1/DhHzh84188">Поддержать нас ❤️</a>
+	</div>
+</div>
+
+{% block content %}{% endblock %}
+</body>
+</html>

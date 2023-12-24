@@ -1,30 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>  
-	{% load static %}
-	<link rel="stylesheet" href="{% static 'css/style.css' %}">
-	<link rel="icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
-  	<meta name="description" content="Официльный сайт Epic hero. Здесь вы можете скачать прототип игры Aiven's story.">
-  	<meta name="Keywords" content="epichero, EPICHERO, Epic hero, Epic Hero, Epic her, Aiven's story, Aiven, Aiven's, Aivens story, story, Прототип, прототип, epic hero, какой-то рыцарь, белый шлем, epic, игра, game"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Epic hero - главная</title>
-</head>
-<body>
-<div class="header">
-	<img src="{% static 'img/логотип.svg' %}" alt="Логотип" class="logo">
-	<h1 class="logo_text">EPIC HERO</h1>
-	<div class="header_right">
-		<a href="games/">games</a>
-		<a href="news/">news</a>
-		<a href="https://www.tinkoff.ru/rm/shrayner.ilya1/DhHzh84188">support</a>
-	</div>
-</div>
+{% extends "base.html" %}
+{% load static %}
 
-<div class="about"><h1>We are an indie game development studio</h1><br><p>We position ourselves as a group of independent students motivated by the desire to create games. On this page you can <a href="news/">read the studio's news</a>, <a href="support/">support us</a>, <a href="/download/">watch a prototype of our main game</a> or get acquainted with <a href="games/">the rest of our games.</a></p> </div>
+{% block title %}Epic hero - главная{% endblock %}
+
+{% block content %}
+
+<div class="about"><h1>Мы инди студия разработки игр</h1><br><p>Мы позиционируем себя как группу независимых студентов, мотивированных желанием создавать
+игры. На этой странице вы можете <a href="news/">прочитать новости студии</a>, <a href="https://www.tinkoff.ru/rm/shrayner.ilya1/DhHzh84188">поддержать нас</a>, <a href="/download/">ознакомиться с прототипом основной игры</a> или <a href="games/">посмотреть остальные.</a></p> </div>
 
 <div class="prototype">
-	<h1 class="logo_podtext">Try out our <br><a href="#" class="underline-one">Aiven`s story</a> prototype 0.0.8</h1>
+	<h1 class="logo_podtext">Попробуйте альфа версию <br><a href="#" class="underline-one">Aiven`s story</a></h1>
 		
 	<a href="/download/" class="download">download</a>
 </div>
@@ -34,5 +19,5 @@
 	<a href="https://vk.com/public219629759"><img src="{% static 'img/vk.svg' %}" alt="vk" class="vk"></a>
 	<a href="https://t.me/epichero_dev"><img src="{% static 'img/telegram.svg' %}" alt="telegram" class="tg"></a>
 </div>
-</body>
-</html>
+
+{% endblock %}
