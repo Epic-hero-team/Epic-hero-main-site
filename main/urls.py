@@ -3,10 +3,10 @@ from django.views.generic.base import TemplateView
 from main.views import main, support, download, news, games
 
 urlpatterns = [
-    path('', main),
-    path('news/', news),
-    path('games/', games),
-    path('support/', support),
+    path('', main, name='home'),
+    #path('news/', news, name='news'),
+    path('games/', games, name='games'),
+    path('support/', support, name='support'),
     path('download/', download),
     path(
         "robots.txt",

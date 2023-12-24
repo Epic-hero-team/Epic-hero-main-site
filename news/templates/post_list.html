@@ -15,24 +15,23 @@
 	<img src="{% static 'img/логотип.svg' %}" alt="Логотип" class="logo">
 	<h1 class="logo_text">EPIC HERO</h1>
 	<div class="header_right">
-		<a href="games/">games</a>
-		<a href="news/">news</a>
+		<a href="{% url 'games' %}">games</a>
+		<a href="{% url 'news' %}">news</a>
 		<a href="https://www.tinkoff.ru/rm/shrayner.ilya1/DhHzh84188">support</a>
 	</div>
 </div>
+<div class="news">
+  {% for post in object_list %}
+  <div class="post-entry">
+    <img src="{{ post.img.url }}">
+    <h1><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h1>
+    <p>{{ post.startPage }}</p><br><br>
+    <div class="more"><a href="{% url 'post_detail' post.pk %}">Подробнее</a></div>
+  </div>
 
-<div class="about"><h1>We are an indie game development studio</h1><br><p>We position ourselves as a group of independent students motivated by the desire to create games. On this page you can <a href="news/">read the studio's news</a>, <a href="support/">support us</a>, <a href="/download/">watch a prototype of our main game</a> or get acquainted with <a href="games/">the rest of our games.</a></p> </div>
+  {% endfor %}
+</div> 
 
-<div class="prototype">
-	<h1 class="logo_podtext">Try out our <br><a href="#" class="underline-one">Aiven`s story</a> prototype 0.0.8</h1>
-		
-	<a href="/download/" class="download">download</a>
-</div>
 
-<div class="soc">
-	<a href="https://youtube.com/@epic_hero"><img src="{% static 'img/youtube.svg' %}" alt="youtube" class="youtube"></a>
-	<a href="https://vk.com/public219629759"><img src="{% static 'img/vk.svg' %}" alt="vk" class="vk"></a>
-	<a href="https://t.me/epichero_dev"><img src="{% static 'img/telegram.svg' %}" alt="telegram" class="tg"></a>
-</div>
+
 </body>
-</html>

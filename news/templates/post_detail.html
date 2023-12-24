@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>  
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+  	<meta name="description" content="Официльный сайт Epic hero. Здесь вы можете скачать прототип игры Aiven's story.">
+  	<meta name="Keywords" content="epichero, EPICHERO, Epic hero, Epic Hero, Epic her, Aiven's story, Aiven, Aiven's, Aivens story, story, Прототип, прототип, epic hero, какой-то рыцарь, белый шлем, epic, игра, game"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Epic hero - главная</title>
+<style>
+.parallax {
+    /* The image used */
+    background-image: url("{{ post.img.url }}");
+
+    /* Set a specific height */
+    height: 80vh; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+</head>
+<body>
+<div class="header">
+	<img src="{% static 'img/логотип.svg' %}" alt="Логотип" class="logo">
+	<h1 class="logo_text">EPIC HERO</h1>
+	<div class="header_right">
+		<a href="{% url 'games' %}">games</a>
+		<a href="{% url 'news' %}">news</a>
+		<a href="https://www.tinkoff.ru/rm/shrayner.ilya1/DhHzh84188">support</a>
+	</div>
+</div>
+<div class="parallax"><h1>{{ post.title }}</h1></div>
+<div class="content">
+  <div class="post-entry">
+
+    <p>{{ post.body }}</p>
+  </div>
+
+</div> 
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://epichero-1.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<script id="dsq-count-scr" src="//epichero-1.disqus.com/count.js" async></script>
+
+
+</body>
