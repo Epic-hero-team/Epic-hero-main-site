@@ -92,7 +92,7 @@ body{
 
 .soc{
     position: relative;
-    margin: 30px 2vw;
+    margin: 10px 2vw;
     display: inline-block;
     width: 90vw;
 }
@@ -100,21 +100,21 @@ body{
 .youtube{
     width: 1vw;
     min-width: 40px;
-    margin: 1vh auto;
+    margin: 7px;
     transition: 0.5s;
 }
 
 .vk{
-    width: 1vw;
+    width: 0.4vw;
     min-width: 40px;
-    margin: 1vh auto;
+    margin: 7px;
     transition: 0.5s;
 }
 
 .tg{
     width: 1vw;
     min-width: 40px;
-    margin: 1vh auto;
+    margin: 7px;
     transition: 0.5s;
 }
 
