@@ -3,9 +3,59 @@
 {% block title %}Новости{% endblock %}
 
 {% block content %}
-<div class="error">
-    <h1>В разработке</h1>
-    <p>Приносим свои извинения, но этот раздел ещё не готов.</p>
+<div class="projects">
+    <!--Doodle cat-->
+  <div class="post">
+      <div class="status"><h1>in dev v0.0.6-b</h1></div>
+      <video class="post-video" autoplay loop muted playsinline>
+          <source src="{% static 'img/doodlecat.mp4' %}" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+    <h1>Doodle cat</h1>
+    <div class="post-content">
+      <p>Exciting Android arcade game where you control a cute
+        cat hero in a purple-hued world. Leap from platform to platform,
+        dodge obstacles, and collect bonuses to reach new heights.
+        With doodle-style graphics and fast-paced gameplay, every session is a fun challenge.
+        Unlock new looks for your cat and compete with friends for the highest scores!</p>
+    </div>
+    <div class="load"><a href="https://github.com/stavrmoris/Games/releases/download/v0.0.6-b/Doodle.cat.v0.0.6.apk"><img src="{% static 'img/dwnl.svg' %}" alt="icon" style="width:1.4em; height:1.4em; vertical-align:middle;">    Download    <img src="{% static 'img/andr.svg' %}" alt="icon" style="width:1.4em; height:1.4em; vertical-align:middle;"></a></div>
+  </div>
 
+    <!--Planet Defender-->
+
+  <div class="post">
+      <div class="status"><h1>in dev v0.0.1-b</h1></div>
+      <video class="post-video" autoplay loop muted playsinline>
+          <source src="{% static 'img/planetdef.mp4' %}" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+    <h1>Planet Defender</h1>
+    <div class="post-content">
+      <p>Take control of a planet and defend it from attacking spaceships"
+          Shoot down enemies, collect power-ups to enhance your strength and defense, and unlock unique skins to customize your planet.
+          Play through increasingly challenging levels and enjoy dynamic gameplay with intuitive controls. Become the ultimate protector of your planet!</p>
+    </div>
+    <div class="load"><a href="https://github.com/stavrmoris/Games/releases/download/v0.0.2-a/Planet.Defence.apk"><img src="{% static 'img/dwnl.svg' %}" alt="icon" style="width:1.4em; height:1.4em; vertical-align:middle;">    Download    <img src="{% static 'img/andr.svg' %}" alt="icon" style="width:1.4em; height:1.4em; vertical-align:middle;"></a></div>
+  </div>
+
+    <!--Aiven's story-->
+
+  <div class="post">
+      <div class="status"><h1>in dev v0.0.8-a</h1></div>
+      <video class="post-video" autoplay loop muted playsinline>
+          <source src="{% static 'img/aiven.mp4' %}" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+    <h1>Aiven's story</h1>
+    <div class="post-content">
+      <p>Exciting platformer for Windows that immerses you in a world full of mysteries and adventures. Play as Aiven,
+          a brave hero exploring vibrant levels packed with traps, enemies, and puzzles.
+          With stunning graphics, dynamic gameplay, and an engaging storyline,
+          Aiven's Story is perfect for platformer enthusiasts. Prepare for unforgettable
+          adventures and test your skills to the limit!</p>
+    </div>
+    <div class="load"><a href="https://github.com/stavrmoris/Games/releases/download/v0.0.8-a/Aiven.s.story.rar"><img src="{% static 'img/dwnl.svg' %}" alt="icon" style="width:1.4em; height:1.4em; vertical-align:middle;">    Download    <img src="{% static 'img/win.svg' %}" alt="icon" style="width:1.4em; height:1.4em; vertical-align:middle;"></a></div>
+  </div>
 </div>
 {% endblock %}

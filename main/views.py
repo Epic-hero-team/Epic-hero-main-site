@@ -7,7 +7,7 @@ def main(request):
 def news(request):
     return render(request, 'news.html')
     
-def games(request):
+def projects(request):
     return render(request, 'games.html')
 
 def support(request):

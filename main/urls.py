@@ -1,12 +1,12 @@
 from django.urls import path, re_path
 from django.views.generic.base import TemplateView
-from main.views import main, support, download, news, games
+from main.views import main, support, download, news, projects
 from django.conf.urls import handler400, handler403, handler404, handler500
 
 urlpatterns = [
     path('', main, name='home'),
     #path('news/', news, name='news'),
-    path('games/', games, name='games'),
+    path('projects/', projects, name='projects'),
     path('support/', support, name='support'),
     path('download/', download),
     path(

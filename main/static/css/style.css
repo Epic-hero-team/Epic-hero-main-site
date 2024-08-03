@@ -1,124 +1,125 @@
-*{
-	margin: 0;
+* {
+    margin: 0;
 }
 
 @font-face {
-	font-family: 'InterTight'; 
-	src: url('../fonts/Inter-Light.ttf'); 
-}
- 
-@font-face {
-	font-family: 'Sofia'; 
-	src: url('../fonts/OpenSans-Light.ttf'); 
+    font-family: 'InterTight';
+    src: url('../fonts/Inter-Light.ttf');
 }
 
 @font-face {
-	font-family: 'Tektur'; 
-	src: url('../fonts/TekturNarrow-ExtraBold.ttf'); 
+    font-family: 'Sofia';
+    src: url('../fonts/OpenSans-Light.ttf');
 }
 
-body{
-	background: #111112;
-	color: #fff;
+@font-face {
+    font-family: 'Tektur';
+    src: url('../fonts/TekturNarrow-ExtraBold.ttf');
 }
 
-.prototype{
+body {
+    background: #111112;
+    color: #fff;
+}
+
+.prototype {
     float: right;
     margin-right: 2vw;
-   outline: solid #fff 4px;
+    outline: solid #fff 4px;
     width: 30vw;
     height: 60vh;
     margin-top: 6vw;
     padding: 2vw;
 }
 
-.prototype h1{
+.prototype h1 {
     margin-top: 3.5vw;
 }
 
-.logotype{
+.logotype {
     float: left;
     margin-left: 2vw;
     margin-top: -3vw;
 }
 
 .underline-one {
-	color: #96abb3; /* Цвет обычной ссылки */
+    color: #96abb3; /* Цвет обычной ссылки */
     position: relative;
     cursor: pointer;
     text-decoration: none; /* Убираем подчеркивание */
 }
+
 .underline-one:after {
-	content: "";
+    content: "";
     display: block;
     position: absolute;
     right: 0;
     bottom: -3px;
     width: 0;
     height: 4px; /* Высота линии */
-    background-color: rgb(115, 199, 255); /* Цвет подчеркивания при исчезании линии*/
+    background-color: rgb(115, 199, 255); /* Цвет подчеркивания при исчезании линии */
     transition: width 0.5s; /* Время эффекта */
 }
 
 .underline-one:hover:after {
-	content: "";
+    content: "";
     width: 100%;
     display: block;
     position: absolute;
     left: 0;
     bottom: -3px;
     height: 4px; /* Высота линии */
-    background-color: rgb(115, 199, 255); /* Цвет подчеркивания при появлении линии*/
-    transition: width 0.5s;  /* Время эффекта */
+    background-color: rgb(115, 199, 255); /* Цвет подчеркивания при появлении линии */
+    transition: width 0.5s; /* Время эффекта */
 }
 
-.logo_podtext{
-	font-family: 'Sofia';
+.logo_podtext {
+    font-family: 'Sofia';
     text-align: center;
     padding: 2px;
     font-size: calc(30px + 1.82vw);
 }
 
-.header{
+.header {
     overflow: hidden;
     background: #171717;
 }
 
-.logo{
-    width: calc(2px + 1vw);;
-    vertical-align:middle;
+.logo {
+    width: calc(2px + 1.4vw);
+    vertical-align: middle;
     margin: 0.6vw 1vw 0vw 1.2vw;
-}   
+}
 
-.soc{
+.soc {
     position: relative;
     margin: 10px 2vw;
     display: inline-block;
     width: 90vw;
 }
 
-.youtube{
+.youtube {
     width: 1vw;
     min-width: 40px;
     margin: 7px;
     transition: 0.5s;
 }
 
-.vk{
+.vk {
     width: 0.4vw;
     min-width: 40px;
     margin: 7px;
     transition: 0.5s;
 }
 
-.tg{
+.tg {
     width: 1vw;
     min-width: 40px;
     margin: 7px;
     transition: 0.5s;
 }
 
-.youtube:hover, .tg:hover, .vk:hover{
+.youtube:hover, .tg:hover, .vk:hover {
     filter: drop-shadow(0 0 1rem rgb(115, 199, 255));
     width: 2vw;
     transition: 0.5s;
@@ -131,30 +132,27 @@ body{
     text-decoration: none;
     padding: 10px 20px;
     border: solid #fff 4px;
-    text-align: center;    
+    text-align: center;
     transition: 0.3s;
-    display: table; margin: 6vh auto;
-  }
+    display: table;
+    margin: 6vh auto;
+}
 
-  .download:hover {
+.download:hover {
     background-color: #fff;
     color: #171717;
     transition: 0.3s;
-  }
-
-.header{
-    overflow: hidden;
 }
 
-.logo_text{
-	font-family: 'Tektur'; 
-	font-size: calc(2px + 2vw);
+.logo_text {
+    font-family: 'Tektur';
+    font-size: calc(2px + 2vw);
     display: inline-block;
-    vertical-align:middle;
+    vertical-align: middle;
     margin-top: 0.6vw;
 }
 
-.header_right{
+.header_right {
     float: right;
     display: flex;
     align-items: center;
@@ -162,9 +160,9 @@ body{
     margin-right: 1vw;
 }
 
-.header_right a{
-	font-family: 'InterTight'; 
-	font-size: calc(2px + 1vw);
+.header_right a {
+    font-family: 'InterTight';
+    font-size: calc(2px + 1vw);
     margin: 1vw 7px;
     text-decoration: none;
     padding: 8px 25px;
@@ -172,14 +170,14 @@ body{
     transition: 0.2s;
 }
 
-.header_right a:hover{
+.header_right a:hover {
     color: #ffffff;
     border-radius: 6px;
-    background: #303030; /*#2c2c2c*/
-    transition: 0.2s;    
+    background: #303030; /* #2c2c2c */
+    transition: 0.2s;
 }
 
-.about{
+.about {
     font-family: "Sofia";
     font-size: calc(1px + 2vw);
     position: relative;
@@ -188,117 +186,201 @@ body{
     margin: 4vw 3vw;
 }
 
-.about a{
+.about a {
     color: rgb(115, 199, 255);
     text-decoration: none;
     transition: 0.2s;
 }
 
-.about a:hover{
+.about a:hover {
     color: rgb(225, 243, 255);
     transition: 0.2s;
 }
 
-.news{
+.news, .projects {
     font-family: "Sofia";
-    #background: #18181A;
-    margin: 30px auto;
-    display:block;
-    width: 90vw;
-    height: 50vh;
-    border-bottom: 2px solid #fff;
+    width: 95vw;
+    margin: 0 auto;
 }
 
-.news h1, .parallax h1{
+.news h1, .parallax h1 {
     color: #fff;
-    font-size: calc(8px + 4vw);
+    font-size: calc(8px + 2vw);
     padding: 5px 20px;
     margin-left: 10px;
 }
 
-.news a{
+.news a {
     text-decoration: none;
     color: #fff;
 }
 
-.more a{
+.more a {
     font-size: calc(8px + 1vw);
     text-decoration: underline;
     transition: 0.2s;
 }
 
-.more a:hover{
+.more a:hover {
     color: rgb(115, 199, 255);
     transition: 0.2s;
 }
 
-.news p{
-    font-size: calc(8px + 1vw);
+.projects, .news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 10px;
+}
+
+.status{
+    background: darkred;
+    position: absolute;
+    top: -5px;
+    left: -15px;
+}
+
+.status h1{
+    font-size: calc(5px + 1vw);
+    padding: 10px 10px;
+}
+
+.post, .post-entry{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #191919;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.post-video, .projects img {
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+}
+
+.post-content, .post-entry {
+    flex-grow: 1;
     padding: 5px 20px;
-    margin-top: 4vh;
+}
+
+.post-content p, .post-entry p {
+    margin: 0;
     color: #fff;
+    font-size: calc(5px + 1vw);
 }
 
-.news img{
-    height: 45vh;
-    float: left;
-    #border-radius: 30px 0 0 0;
-    margin-right: 7vw;
+.post h1, .post-entry h1 {
+    margin: 10px 0 0;
 }
 
-.content{
+.load {
+    margin: 10px 5px 20px;
+}
+
+.load a {
+    padding: 5px 1vw 10px;
+    text-decoration: none;
+    font-size: calc(10px + 1vw);
+    background: rgb(115, 199, 255);
+    color: #fff;
+    transition: 0.4s;
+}
+
+.load a:hover {
+    background: #111112;
+    color: rgb(115, 199, 255);
+    transition: 0.4s;
+}
+
+@media (min-width: 1200px) {
+    .projects, .news {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .post-content p {
+        font-size: calc(5px + 1vw);
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1199px) {
+    .projects, .news {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .post-content p, .post-entry p {
+        font-size: calc(10px + 1vw);
+    }
+}
+
+@media (max-width: 599px) {
+    .projects, .news {
+        grid-template-columns: 1fr;
+    }
+    .post-content p, .post-entry p {
+        font-size: calc(5px + 2vw);
+    }
+    .load a {
+        font-size: calc(10px + 3vw);
+    }
+}
+
+.post-entry img {
+    width: 100%;
+}
+
+.content {
     font-family: "Sofia";
-    display:block;
+    display: block;
     width: 80vw;
     margin: 0 auto;
 }
 
-.content img{
+.content img {
     width: 60vw;
     border-radius: 30px;
     margin: 1vh auto;
-    display:block;
+    display: block;
 }
 
-.content p{
+.content p {
     font-size: calc(8px + 1vw);
     padding: 40px 20px;
     margin-top: 2vh;
     color: #fff;
 }
 
-.parallax h1{
+.parallax h1 {
     font-family: "InterTight";
     text-align: center;
     font-size: calc(8px + 8vw);
     padding-top: 20vh;
 }
 
-#disqus_thread{
+#disqus_thread {
     width: 80vw;
     margin: 6vh auto;
 }
 
-.home{
+.home {
     text-decoration: none;
     cursor: pointer;
     color: #fff;
     transition: 0.5s;
 }
 
-.home:hover{
+.home:hover {
     filter: drop-shadow(0 0 0.75rem rgb(115, 199, 255));
     transition: 0.5s;
 }
 
-.error h1{
+.error h1 {
     font-family: "InterTight";
     text-align: center;
     font-size: calc(8px + 8vw);
     padding-top: 8vh;
 }
 
-.error p{
+.error p {
     font-size: calc(8px + 4vw);
     padding: 40px 20px;
     margin-top: 4vh;
@@ -306,108 +388,75 @@ body{
     color: #fff;
 }
 
-@media (max-width:600px) {
-.about{
-    font-family: "Sofia";
-    font-size: calc(10px + 2vw);
-    width: 90vw;
-    float: none;
-    margin: 4vw 3vw;
-    position: static;
-    display: block;
-}
+@media (max-width: 600px) {
+    .about {
+        font-family: "Sofia";
+        font-size: calc(10px + 2vw);
+        width: 90vw;
+        float: none;
+        margin: 4vw 3vw;
+        position: static;
+        display: block;
+    }
 
-.prototype{
-    float: none;
-    margin: 1vh auto;
-    outline: solid #fff 2px;
-    width: 90vw;
-    height: auto;
-    margin-top: 6vh;
-    padding: 2vw;
-    position: relative;
-    display: block;
-}
+    .prototype {
+        float: none;
+        margin: 1vh auto;
+        outline: solid #fff 2px;
+        width: 90vw;
+        height: auto;
+        margin-top: 6vh;
+        padding: 2vw;
+        position: relative;
+        display: block;
+    }
 
-.download {
-    font-family: 'Sofia';
-    font-size: calc(8px + 2vw);
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border: solid #fff 4px;
-    text-align: center;    
-    transition: 0.3s;
-    display: table; margin: 6vh auto;
-  }
+    .download {
+        font-family: 'Sofia';
+        font-size: calc(8px + 2vw);
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border: solid #fff 4px;
+        text-align: center;
+        transition: 0.3s;
+        display: table;
+        margin: 6vh auto;
+    }
 
-.header_right a{
-	font-family: 'InterTight'; 
-	font-size: calc(9px + 1vw);
-    margin: 1vw 1px;
-    text-decoration: none;
-    padding: 8px 5px;
-    color: #aaaaae;
-    transition: 0.2s;
-}
+    .header_right a {
+        font-family: 'InterTight';
+        font-size: calc(9px + 1vw);
+        margin: 1vw 1px;
+        text-decoration: none;
+        padding: 8px 5px;
+        color: #aaaaae;
+        transition: 0.2s;
+    }
 
-.logo_text{
-	font-family: 'Tektur'; 
-	font-size: calc(12px + 2vw);
-    display: inline-block;
-    vertical-align:middle;
-    margin-top: 8px;
-}
+    .logo_text {
+        font-family: 'Tektur';
+        font-size: calc(12px + 2vw);
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: 8px;
+    }
 
-.logo{
-    width: calc(10px + 1vw);;
-    vertical-align:middle;
-    margin: 8px 2px 0 4px;
-}
-.news{
-    font-family: "Sofia";
-    #background: #18181A;
-    margin: 30px auto;
-    display:block;
-    width: 95vw;
-    height: auto;
-    border-bottom: 2px solid #fff;
-}
-.news img{
-    width: 100%;
-    height: auto;
-    float: left;
-    #border-radius: 30px 0 0 0;
-    margin-right: 2vw;
-}
+    .logo {
+        width: calc(10px + 1vw);
+        vertical-align: middle;
+        margin: 8px 2px 0 4px;
+    }
 
-.news h1{
-    font-size: calc(14px + 4vw);
-    padding: 5px 2px;
-    margin-left: 4px;
-}
+    .content p {
+        font-size: calc(12px + 1vw);
+    }
 
-.news p{
-    font-size: calc(12px + 1vw);
-    padding: 4px 4px;
-    margin-top: 1vh;
-    color: #fff;
-}
-.more{  
-    margin: -2vh 0 2vh 0;
-}
-.more a{
-    font-size: calc(14px + 1vw);  
-    color: rgb(115, 199, 255);
-    padding: 4px; 
-}
-.content p{
-    font-size: calc(12px + 1vw);
-}
-.content{
-    width: 97vw;
-}
-#disqus_thread{
-    width: 97vw;
-}
+    .content {
+        width: 97vw;
+    }
+
+    #disqus_thread {
+        width: 97vw;
+    }
 }
